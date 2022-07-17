@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jul 17 21:55:21 2022
+# Process ID: 12040
+# Current directory: E:/Vivado_Projects/Timer_Project/Timer_Project.runs/Timer_Project_clk_wiz_1_0_synth_1
+# Command line: vivado.exe -log Timer_Project_clk_wiz_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Timer_Project_clk_wiz_1_0.tcl
+# Log file: E:/Vivado_Projects/Timer_Project/Timer_Project.runs/Timer_Project_clk_wiz_1_0_synth_1/Timer_Project_clk_wiz_1_0.vds
+# Journal file: E:/Vivado_Projects/Timer_Project/Timer_Project.runs/Timer_Project_clk_wiz_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Timer_Project_clk_wiz_1_0.tcl -notrace
