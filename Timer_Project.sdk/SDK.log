@@ -1,0 +1,36 @@
+22:10:42 INFO  : Registering command handlers for SDK TCF services
+22:10:44 INFO  : Launching XSCT server: xsct.bat -interactive E:\Vivado_Projects\Timer_Project\Timer_Project.sdk\temp_xsdb_launch_script.tcl
+22:10:53 INFO  : XSCT server has started successfully.
+22:10:53 INFO  : Successfully done setting XSCT server connection channel  
+22:11:02 INFO  : Successfully done setting SDK workspace  
+22:11:02 INFO  : Processing command line option -hwspec E:/Vivado_Projects/Timer_Project/Timer_Project.sdk/Timer_Project_wrapper.hdf.
+22:13:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:13:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C642A" && level==0} -index 0' command is executed.
+22:13:49 INFO  : FPGA configured successfully with bitstream "E:/Vivado_Projects/Timer_Project/Timer_Project.sdk/Timer_Project_wrapper_hw_platform_0/download.bit"
+22:14:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C642A" && level==0} -index 0' command is executed.
+22:14:41 INFO  : 'fpga -state' command is executed.
+22:14:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:14:42 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C642A' is selected.
+22:14:42 INFO  : 'jtag frequency' command is executed.
+22:14:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:14:42 INFO  : Context for processor 'microblaze_0' is selected.
+22:14:42 INFO  : Processor reset is completed for 'microblaze_0'.
+22:14:42 INFO  : Context for processor 'microblaze_0' is selected.
+22:14:42 INFO  : The application 'E:/Vivado_Projects/Timer_Project/Timer_Project.sdk/Timer_Project/Debug/Timer_Project.elf' is downloaded to processor 'microblaze_0'.
+22:14:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C642A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C642A"} -index 0
+dow E:/Vivado_Projects/Timer_Project/Timer_Project.sdk/Timer_Project/Debug/Timer_Project.elf
+----------------End of Script----------------
+
+22:14:42 INFO  : Context for processor 'microblaze_0' is selected.
+22:14:42 INFO  : 'con' command is executed.
+22:14:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C642A"} -index 0
+con
+----------------End of Script----------------
+
+22:14:42 INFO  : Disconnected from the channel tcfchan#1.

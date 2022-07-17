@@ -1,0 +1,471 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jul 17 21:58:46 2022
+# Process ID: 7192
+# Current directory: E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1
+# Command line: vivado.exe -log Timer_Project_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Timer_Project_wrapper.tcl
+# Log file: E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/Timer_Project_wrapper.vds
+# Journal file: E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Timer_Project_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2019.1/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 324.039 ; gain = 23.469
+Command: synth_design -top Timer_Project_wrapper -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2744 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 752.836 ; gain = 176.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_wrapper' [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/hdl/Timer_Project_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project' [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_axi_uartlite_0_0' [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_axi_uartlite_0_0' (1#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'Timer_Project_axi_uartlite_0_0' has 22 connections declared, but only 21 given [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:123]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_clk_wiz_1_0' [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_clk_wiz_1_0' (2#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_clk_wiz_1_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'clk_wiz_1' of module 'Timer_Project_clk_wiz_1_0' has 5 connections declared, but only 4 given [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:145]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_mdm_1_0' [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_mdm_1_0' (3#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_microblaze_0_0' [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_microblaze_0_0' (4#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_microblaze_0_axi_intc_0' [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_microblaze_0_axi_intc_0' (5#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_microblaze_0_axi_periph_0' [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:341]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1PI1OXI' [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:791]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1PI1OXI' (6#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:791]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_JNHZFM' [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:923]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_JNHZFM' (7#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:923]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1HXKFT5' [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:1289]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1HXKFT5' (8#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:1289]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_xbar_0' [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_xbar_0' (9#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_xbar_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'Timer_Project_xbar_0' has 40 connections declared, but only 38 given [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:750]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_microblaze_0_axi_periph_0' (10#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:341]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_3KZB1' [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:1055]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_dlmb_bram_if_cntlr_0' [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_dlmb_bram_if_cntlr_0' (11#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_dlmb_v10_0' [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_dlmb_v10_0' (12#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'Timer_Project_dlmb_v10_0' has 25 connections declared, but only 24 given [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:1201]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_ilmb_bram_if_cntlr_0' [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_ilmb_bram_if_cntlr_0' (13#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_ilmb_v10_0' [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_ilmb_v10_0' (14#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'Timer_Project_ilmb_v10_0' has 25 connections declared, but only 24 given [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:1247]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_lmb_bram_0' [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_lmb_bram_0' (15#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'Timer_Project_lmb_bram_0' has 16 connections declared, but only 14 given [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:1272]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_3KZB1' (16#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:1055]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_microblaze_0_xlconcat_0' [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_microblaze_0_xlconcat_0/synth/Timer_Project_microblaze_0_xlconcat_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 2 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (17#1) [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_microblaze_0_xlconcat_0' (18#1) [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_microblaze_0_xlconcat_0/synth/Timer_Project_microblaze_0_xlconcat_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Timer_Project_rst_clk_wiz_1_100M_0' [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_rst_clk_wiz_1_100M_0' (19#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/.Xil/Vivado-7192-DESKTOP-9JQO1HH/realtime/Timer_Project_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'Timer_Project_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:330]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project' (20#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/synth/Timer_Project.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Timer_Project_wrapper' (21#1) [E:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/hdl/Timer_Project_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In2[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1HXKFT5 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1HXKFT5 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1HXKFT5 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1HXKFT5 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_JNHZFM has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_JNHZFM has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_JNHZFM has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_JNHZFM has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1PI1OXI has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1PI1OXI has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1PI1OXI has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1PI1OXI has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design Timer_Project_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design Timer_Project_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design Timer_Project_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design Timer_Project_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design Timer_Project_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design Timer_Project_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 820.680 ; gain = 244.559
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 820.680 ; gain = 244.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 820.680 ; gain = 244.559
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_microblaze_0_0/Timer_Project_microblaze_0_0/Timer_Project_microblaze_0_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0'
+Finished Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_microblaze_0_0/Timer_Project_microblaze_0_0/Timer_Project_microblaze_0_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0'
+Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_dlmb_v10_0/Timer_Project_dlmb_v10_0/Timer_Project_dlmb_v10_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_dlmb_v10_0/Timer_Project_dlmb_v10_0/Timer_Project_dlmb_v10_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_ilmb_v10_0/Timer_Project_ilmb_v10_0/Timer_Project_dlmb_v10_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_ilmb_v10_0/Timer_Project_ilmb_v10_0/Timer_Project_dlmb_v10_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_dlmb_bram_if_cntlr_0/Timer_Project_dlmb_bram_if_cntlr_0/Timer_Project_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_dlmb_bram_if_cntlr_0/Timer_Project_dlmb_bram_if_cntlr_0/Timer_Project_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_ilmb_bram_if_cntlr_0/Timer_Project_ilmb_bram_if_cntlr_0/Timer_Project_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_ilmb_bram_if_cntlr_0/Timer_Project_ilmb_bram_if_cntlr_0/Timer_Project_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_lmb_bram_0/Timer_Project_lmb_bram_0/Timer_Project_lmb_bram_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_lmb_bram_0/Timer_Project_lmb_bram_0/Timer_Project_lmb_bram_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_xbar_0/Timer_Project_xbar_0/Timer_Project_xbar_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_xbar_0/Timer_Project_xbar_0/Timer_Project_xbar_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_microblaze_0_axi_intc_0/Timer_Project_microblaze_0_axi_intc_0/Timer_Project_microblaze_0_axi_intc_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_microblaze_0_axi_intc_0/Timer_Project_microblaze_0_axi_intc_0/Timer_Project_microblaze_0_axi_intc_0_in_context.xdc] for cell 'Timer_Project_i/microblaze_0_axi_intc'
+Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_mdm_1_0/Timer_Project_mdm_1_0/Timer_Project_mdm_1_0_in_context.xdc] for cell 'Timer_Project_i/mdm_1'
+Finished Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_mdm_1_0/Timer_Project_mdm_1_0/Timer_Project_mdm_1_0_in_context.xdc] for cell 'Timer_Project_i/mdm_1'
+Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_clk_wiz_1_0/Timer_Project_clk_wiz_1_0/Timer_Project_clk_wiz_1_0_in_context.xdc] for cell 'Timer_Project_i/clk_wiz_1'
+Finished Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_clk_wiz_1_0/Timer_Project_clk_wiz_1_0/Timer_Project_clk_wiz_1_0_in_context.xdc] for cell 'Timer_Project_i/clk_wiz_1'
+Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_rst_clk_wiz_1_100M_0/Timer_Project_rst_clk_wiz_1_100M_0/Timer_Project_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'Timer_Project_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_rst_clk_wiz_1_100M_0/Timer_Project_rst_clk_wiz_1_100M_0/Timer_Project_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'Timer_Project_i/rst_clk_wiz_1_100M'
+Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_axi_uartlite_0_0/Timer_Project_axi_uartlite_0_0/Timer_Project_axi_uartlite_0_0_in_context.xdc] for cell 'Timer_Project_i/axi_uartlite_0'
+Finished Parsing XDC File [e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_axi_uartlite_0_0/Timer_Project_axi_uartlite_0_0/Timer_Project_axi_uartlite_0_0_in_context.xdc] for cell 'Timer_Project_i/axi_uartlite_0'
+Parsing XDC File [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 899.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 899.758 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Timer_Project_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 910.418 ; gain = 334.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 910.418 ; gain = 334.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_clk_wiz_1_0/Timer_Project_clk_wiz_1_0/Timer_Project_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  e:/Vivado_Projects/Timer_Project/Timer_Project.srcs/sources_1/bd/Timer_Project/ip/Timer_Project_clk_wiz_1_0/Timer_Project_clk_wiz_1_0/Timer_Project_clk_wiz_1_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for Timer_Project_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/microblaze_0_axi_intc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/microblaze_0_xlconcat. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Timer_Project_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 910.418 ; gain = 334.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 910.418 ; gain = 334.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Timer_Project_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design Timer_Project_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design Timer_Project_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design Timer_Project_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design Timer_Project_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design Timer_Project_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 910.418 ; gain = 334.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Timer_Project_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'Timer_Project_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Timer_Project_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'Timer_Project_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Timer_Project_i/mdm_1/Dbg_Clk_0' to pin 'Timer_Project_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Timer_Project_i/mdm_1/Dbg_Update_0' to pin 'Timer_Project_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Timer_Project_i/clk_wiz_1/clk_out1' to pin 'Timer_Project_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Timer_Project_i/clk_wiz_1/clk_out2' to pin 'Timer_Project_i/clk_wiz_1/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 910.418 ; gain = 334.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 910.418 ; gain = 334.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 910.418 ; gain = 334.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 926.121 ; gain = 350.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 926.121 ; gain = 350.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 926.121 ; gain = 350.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 926.121 ; gain = 350.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 926.121 ; gain = 350.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 926.121 ; gain = 350.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------------+----------+
+|      |BlackBox name                         |Instances |
++------+--------------------------------------+----------+
+|1     |Timer_Project_xbar_0                  |         1|
+|2     |Timer_Project_axi_uartlite_0_0        |         1|
+|3     |Timer_Project_clk_wiz_1_0             |         1|
+|4     |Timer_Project_mdm_1_0                 |         1|
+|5     |Timer_Project_microblaze_0_0          |         1|
+|6     |Timer_Project_microblaze_0_axi_intc_0 |         1|
+|7     |Timer_Project_rst_clk_wiz_1_100M_0    |         1|
+|8     |Timer_Project_dlmb_bram_if_cntlr_0    |         1|
+|9     |Timer_Project_dlmb_v10_0              |         1|
+|10    |Timer_Project_ilmb_bram_if_cntlr_0    |         1|
+|11    |Timer_Project_ilmb_v10_0              |         1|
+|12    |Timer_Project_lmb_bram_0              |         1|
++------+--------------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------------+------+
+|      |Cell                                  |Count |
++------+--------------------------------------+------+
+|1     |Timer_Project_axi_uartlite_0_0        |     1|
+|2     |Timer_Project_clk_wiz_1_0             |     1|
+|3     |Timer_Project_dlmb_bram_if_cntlr_0    |     1|
+|4     |Timer_Project_dlmb_v10_0              |     1|
+|5     |Timer_Project_ilmb_bram_if_cntlr_0    |     1|
+|6     |Timer_Project_ilmb_v10_0              |     1|
+|7     |Timer_Project_lmb_bram_0              |     1|
+|8     |Timer_Project_mdm_1_0                 |     1|
+|9     |Timer_Project_microblaze_0_0          |     1|
+|10    |Timer_Project_microblaze_0_axi_intc_0 |     1|
+|11    |Timer_Project_rst_clk_wiz_1_100M_0    |     1|
+|12    |Timer_Project_xbar_0                  |     1|
+|13    |IBUF                                  |     2|
+|14    |OBUF                                  |     1|
++------+--------------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+----------------------------------------+------+
+|      |Instance                      |Module                                  |Cells |
++------+------------------------------+----------------------------------------+------+
+|1     |top                           |                                        |  1122|
+|2     |  Timer_Project_i             |Timer_Project                           |  1119|
+|3     |    microblaze_0_axi_periph   |Timer_Project_microblaze_0_axi_periph_0 |   263|
+|4     |    microblaze_0_xlconcat     |Timer_Project_microblaze_0_xlconcat_0   |     0|
+|5     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_3KZB1     |   496|
++------+------------------------------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 926.121 ; gain = 350.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 926.121 ; gain = 260.262
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 926.121 ; gain = 350.000
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 943.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 943.516 ; gain = 619.477
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 943.516 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado_Projects/Timer_Project/Timer_Project.runs/synth_1/Timer_Project_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Timer_Project_wrapper_utilization_synth.rpt -pb Timer_Project_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 17 21:59:39 2022...

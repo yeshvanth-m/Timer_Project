@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Timer_Project_wrapper.mmi" key="Timer_Project_wrapper_hw_platform_0-bmmFile"/>
+	<item value="false" key="Timer_Project_wrapper_hw_platform_0-partial_bit"/>
+	<item value="Timer_Project_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="bootloop" key="Timer_Project_wrapper_hw_platform_0-microblaze_0-initElf"/>
+	<item value="Local" key="Timer_Project_wrapper_hw_platform_0-target"/>
+	<item value="Auto Detect" key="Timer_Project_wrapper_hw_platform_0-device"/>
+	<item value="Timer_Project_wrapper.bit" key="Timer_Project_wrapper_hw_platform_0-bitFile"/>
+</section>
